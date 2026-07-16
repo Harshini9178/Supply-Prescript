@@ -1,30 +1,24 @@
-# SupplyPrescript
+# SupplyPrescript — Frontend
 
-## Project Overview
+Frontend for **SupplyPrescript**, a closed-loop prescriptive analytics system.
+Built by Member 4 (Frontend Lead) as part of the Axlero Solutions team project.
 
-SupplyPrescript is an AI-powered Closed-Loop Prescriptive Analytics System.
+## Stack
 
-This project predicts supply chain delays using Machine Learning and recommends the best business decisions through optimization techniques.
+- React (Vite)
+- Charts (planned: Recharts / Chart.js)
+- REST API integration with backend (FastAPI)
 
-## Internship
+## Getting Started
 
-Company: AXLERO Solutions
+```bash
+npm install
+npm run dev
+```
 
-Duration: 3 Months
+## Week 1 — Day 2: React Setup
 
-Project: SupplyPrescript
-
-## Technology Stack
-
-- Python
-- PostgreSQL
-- FastAPI
-- XGBoost
-- SciPy
-- React
-- Git
-- GitHub
-
-## Status
-
-Week 1 - Project Setup
+- Scaffolded project with Vite + React
+- Established project structure (`src/`, `public/`)
+- Verified dev server runs locally
+- Next: Dashboard layout (Day 3)
