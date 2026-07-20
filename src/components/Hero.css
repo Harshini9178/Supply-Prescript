@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin: 0;
+}
+
+.hero p {
+  max-width: 480px;
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hero-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: #f0fdfa;
+  color: #0f766e;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #14b8a6;
+}
