@@ -32,4 +32,12 @@ npm run dev
 - Replaced default Vite boilerplate with a branded starting layout (Navbar, Hero)
 - Set up a `components/` folder for reusable UI pieces
 - Verified dev server runs locally with no errors
-- Next: Dashboard layout (Day 3)
+
+## Week 1 — Day 4: Navigation
+
+- Installed and configured `react-router-dom`
+- Wrapped the app in `BrowserRouter` (`main.jsx`)
+- Added routes for Dashboard, Inventory, Insights, and Reports (`pages/`)
+- Converted Navbar links to `NavLink` with active-route styling
+- Verified navigation works between all pages with no console errors
+- Next: Dashboard Pages content (Day 5)

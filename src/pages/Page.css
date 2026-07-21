@@ -1,0 +1,26 @@
+.page {
+  min-height: calc(100vh - 64px);
+}
+
+.page-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  gap: 0.5rem;
+  min-height: calc(100vh - 64px);
+}
+
+.page-placeholder h2 {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin: 0;
+}
+
+.page-placeholder p {
+  color: #64748b;
+  font-size: 1rem;
+  margin: 0;
+}

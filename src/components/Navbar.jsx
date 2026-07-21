@@ -1,4 +1,12 @@
+import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+
+const links = [
+  { to: '/', label: 'Dashboard' },
+  { to: '/inventory', label: 'Inventory' },
+  { to: '/insights', label: 'Insights' },
+  { to: '/reports', label: 'Reports' },
+]
 
 function Navbar() {
   return (
@@ -8,10 +16,17 @@ function Navbar() {
         <span className="navbar-title">SupplyPrescript</span>
       </div>
       <ul className="navbar-links">
-        <li>Dashboard</li>
-        <li>Inventory</li>
-        <li>Insights</li>
-        <li>Reports</li>
+        {links.map((link) => (
+          <li key={link.to}>
+            <NavLink
+              to={link.to}
+              end={link.to === '/'}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   )
