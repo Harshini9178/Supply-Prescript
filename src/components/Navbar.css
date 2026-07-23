@@ -5,6 +5,7 @@
   padding: 1rem 2rem;
   background-color: #0f172a;
   color: #f1f5f9;
+  position: relative;
 }
 
 .navbar-brand {
@@ -32,6 +33,15 @@
   letter-spacing: 0.02em;
 }
 
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f1f5f9;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
 .navbar-links {
   display: flex;
   gap: 1.5rem;
@@ -41,6 +51,9 @@
 }
 
 .navbar-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   cursor: pointer;
   font-size: 0.95rem;
   color: #cbd5e1;
@@ -57,4 +70,41 @@
 .navbar-links a.active {
   color: #14b8a6;
   border-bottom-color: #14b8a6;
+}
+
+@media (max-width: 720px) {
+  .navbar-toggle {
+    display: inline-flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: #0f172a;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .navbar-links.open {
+    max-height: 260px;
+  }
+
+  .navbar-links li {
+    border-top: 1px solid #1e293b;
+  }
+
+  .navbar-links a {
+    padding: 0.85rem 2rem;
+    border-bottom: none;
+  }
+
+  .navbar-links a.active {
+    background-color: #1e293b;
+    border-bottom: none;
+  }
 }

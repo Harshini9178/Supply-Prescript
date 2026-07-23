@@ -39,5 +39,15 @@ npm run dev
 - Wrapped the app in `BrowserRouter` (`main.jsx`)
 - Added routes for Dashboard, Inventory, Insights, and Reports (`pages/`)
 - Converted Navbar links to `NavLink` with active-route styling
+- Added `lucide-react` icons to each nav link for clearer visual hierarchy
+- Added a responsive hamburger menu for mobile/narrow screens (nav collapses under 720px)
 - Verified navigation works between all pages with no console errors
-- Next: Dashboard Pages content (Day 5)
+
+## Week 2 — Day 6: API Integration (started)
+
+- Added `src/services/api.js` — centralized fetch wrapper with base URL config
+- Added `src/services/inventoryService.js` — first API call (`GET /api/inventory`)
+- Connected the Inventory page to the API with loading, error, and empty states
+- Added `.env.example` documenting `VITE_API_BASE_URL` (real `.env` is gitignored)
+- Falls back gracefully with a friendly message if the backend isn't live yet
+- Next: connect remaining pages (Insights, Reports) once their endpoints are ready
